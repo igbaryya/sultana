@@ -1,0 +1,25 @@
+.login {
+  &-container {
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, #ffffff, #ffffff);
+    height: 100vh;
+    padding: 0px;
+    display: flex;
+  }
+  &-form {
+    &-paper {
+      min-height: 250px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  &-passcode-input {
+    width:4vw !important;
+    height: 45px;
+    margin: 0px 5px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+  }
+}

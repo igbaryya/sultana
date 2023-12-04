@@ -1,0 +1,38 @@
+.modal {
+  &-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 50px;
+    align-items: center;
+  }
+  &-footer {
+    margin-top: 10px;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    padding: 5px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    max-height: fit-content !important;
+    button {
+      margin: 0px 12px;
+    }
+  }
+  &-container {
+    flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+  .MuiModal-root {
+    overflow: auto;
+  }
+
+.date-field {
+  input {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+}

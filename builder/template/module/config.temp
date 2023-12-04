@@ -1,0 +1,14 @@
+import { createActionTypes } from 'sdk/reduxBase';
+
+export const sliceName = '{MODULE_NAME}Api';
+export const ActionTypes = createActionTypes([
+	'UPDATE_HELLO_WORLD',
+	'CLEAR_API_ERROR',
+	'UPDATE_API_ERROR'
+]);
+
+const config = {
+	sliceName
+};
+
+export default config;

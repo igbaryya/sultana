@@ -1,0 +1,11 @@
+import { createSelector } from '@reduxjs/toolkit';
+import { ApplicationSDKState } from 'sdk/interfaces/sdkInterface';
+import { sliceName } from './{MODULE_NAME}Config';
+import { {MODULE_NAME_CC}State } from './{MODULE_NAME}Interface';
+
+export const sliceSelector = (state: ApplicationSDKState) => {
+	return state[sliceName];
+};
+export const hellowWorldSlice = createSelector(sliceSelector, (slice: {MODULE_NAME_CC}State) => {
+	return slice.helloWorldMsg;
+});

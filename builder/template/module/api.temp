@@ -1,0 +1,23 @@
+import { ToolkitStore } from '@reduxjs/toolkit/dist/configureStore';
+import BaseApi from 'sdk/reduxBase/baseApi';
+import { ActionTypes, sliceName } from './{MODULE_NAME}Config';
+import * as selectors from './{MODULE_NAME}Selector';
+
+export default class {MODULE_NAME_CC}Api extends BaseApi {
+	constructor(store: ToolkitStore) {
+		super(store, ActionTypes, sliceName);
+	}
+	
+	getHelloWorld() {
+		return selectors.hellowWorldSlice(this.store.getState());
+	}
+
+	updateHelloWorldMsg(newMsg: string) {
+		this.store.dispatch({ type: ActionTypes.UPDATE_HELLO_WORLD, payload: this._validateHelloWorldMsg(newMsg) });
+		return this.sdkResponser.success();
+	}
+
+	_validateHelloWorldMsg(msg: string) {
+		return msg || 'Hello Wolrd';
+	}
+}

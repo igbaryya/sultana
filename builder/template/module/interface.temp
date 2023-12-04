@@ -1,0 +1,6 @@
+import { APIError } from 'sdk/interfaces/sdkInterface';
+
+export interface {MODULE_NAME_CC}State {
+	helloWorldMsg: string;
+	error?: APIError;
+}

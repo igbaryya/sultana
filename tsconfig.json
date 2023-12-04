@@ -1,0 +1,36 @@
+{
+	"compilerOptions": {
+	  "outDir": "./dist/",
+	  "module": "esnext",
+	  "moduleResolution": "node",
+	  "baseUrl": "./src",
+	  "target": "es5",
+	  "lib": ["es5", "es6", "es7", "es2017", "dom", "esnext.asynciterable", "es2019"],
+	  "jsx": "react",
+	  "sourceMap": true,
+	  "allowJs": false,
+	  "forceConsistentCasingInFileNames": true,
+	  "noImplicitReturns": true,
+	  "noImplicitThis": true,
+	  "noImplicitAny": true,
+	  "strictNullChecks": true,
+	  "noUnusedLocals": true,
+	  "declaration": true,
+	  "allowSyntheticDefaultImports": true,
+	  "experimentalDecorators": true,
+	  "resolveJsonModule": true,
+	  "esModuleInterop": true
+	},
+	"include": [
+	  "src/**/*",
+	  "src/**/*.tsx",
+	  "files",
+	  "src/",
+	  "*.tsx",
+	  "**/*.js",
+	  "test/",
+	  "eslint.config.mjs" ,
+	  "index.tsx",
+	],
+	"exclude": ["node_modules", "generator", "dist"]
+  }

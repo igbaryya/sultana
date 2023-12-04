@@ -1,0 +1,19 @@
+
+.bottom-add {
+    z-index: 1000 !important;
+    position: fixed !important;
+    bottom: 15px !important;
+    right: 15px !important;
+    border: 1px solid #000 !important;
+    color: #fff !important;
+    background: #000 !important;
+    border-radius: 100% !important;
+    height: 50px !important;
+    width: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 0px !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    min-width: 50px !important;
+}
