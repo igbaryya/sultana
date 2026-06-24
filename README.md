@@ -4,6 +4,8 @@
 > October 7th, 2023 events to help the municipality of Sderot locate, support,
 > and protect at-risk and displaced teenagers.
 
+**Built with:** React · TypeScript · Redux Toolkit · Firebase · Material UI
+
 ## What is Sultana?
 
 **Sultana** is a crisis intervention and youth case-management platform
